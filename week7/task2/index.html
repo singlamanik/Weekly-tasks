@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
+<body>
+ 
+  <div id="referen">
+    <child></child>
+    <child>
+      <button type="checkbox" slot="name_2">this is name_2</button>
+      <span slot="name_1">Child from children</span>
+    </child>
+  </div>
+<template id="reference">
+  <div>
+      <p>This is a paragraph in the child component</p>
+      <h1>This is header 1</h1>
+      <slot name="name_1">name_1</slot>
+      <slot name="name_2"><span>name_2</span></slot>
+    <script src="vue.js"></script>
+  </div>
+</template>
+</body>
+</html>
